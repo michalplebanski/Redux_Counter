@@ -9,11 +9,11 @@ export const reducer = (state = defaultState, action) => {
 	switch (action.type) {
 		case constants.INCREMENT:
 			return {
-				...state, sum: sum + value
+				...state, sum: state.sum + state.value
 			};
 		case constants.DECREMENT:
 			return {
-				...state, sum: sum - value
+				...state, sum: state.sum - state.value
 			};
 		default:
 			return state;
