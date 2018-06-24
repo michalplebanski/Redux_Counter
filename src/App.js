@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import DevTools from './DevTools';
 import * as actions from "./actions/actions";
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
 				<button onClick={this.props.decrementCount}>
 					-{this.props.value}
 				</button>
+				<DevTools />
 			</div>
 		);
 	}
